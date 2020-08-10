@@ -1,7 +1,9 @@
 from listProducts import *
+from dotenv import load_dotenv
+import os
 
-url = 'https://www.amazon.com.br/hz/wishlist/ls/Y4THLN39W7GZ#store'
-
+load_dotenv(dotenv_path='.env')
+url = os.getenv('url')
 con = listConnection(url)
 
 for li in listBooks(con):

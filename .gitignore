@@ -1,3 +1,2 @@
-__pychache__
-geckodriver.log
+__pycache__/
 .env
